@@ -697,7 +697,7 @@ var W, F, N, x, C, V = function() {
           Accept: "application/json"
         };
         window.RIVET_TOKEN && (i.Authorization = "Bearer" + window
-          .RIVET_TOKEN), fetch("http:localhost/files", {
+          .RIVET_TOKEN), fetch("127.0.0.1/files", {
           headers: i
         }).then((e => {
           if (e.ok) return e.json();
@@ -5472,9 +5472,9 @@ var H = function() {
         e = "br"
       }
       var i, _, a = document.getElementById("servers").value;
-      "auto" == a ? (i = "https://moaning.zip/find", _ = {
+      "auto" == a ? (i = "127.0.0.1/find", _ = {
         game_modes: [e]
-      }) : (i = "https://moaning.zip/join", _ = {
+      }) : (i = "127.0.0.1/join", _ = {
         lobby_id: a
       });
       let o = {
