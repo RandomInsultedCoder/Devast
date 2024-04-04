@@ -697,7 +697,7 @@ var W, F, N, x, C, V = function() {
           Accept: "application/json"
         };
         window.RIVET_TOKEN && (i.Authorization = "Bearer" + window
-          .RIVET_TOKEN), fetch("https://moaning.zip/list", {
+          .RIVET_TOKEN), fetch("http:localhost/files", {
           headers: i
         }).then((e => {
           if (e.ok) return e.json();
